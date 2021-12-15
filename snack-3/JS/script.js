@@ -4,9 +4,13 @@
 
 const hookHtml = document.getElementById("hook");
 
+// dichiarazione variabili
+
 let highNumber;
 
 let x = 0
+
+// Ciclo do-while
 
 do {
   highNumber = Math.pow(2, x);
