@@ -6,8 +6,6 @@
 
 const hookHtml = document.getElementById("hook");
 
-numbers = ["1","2","3","4","5"]
-
 let numuser = parseInt(prompt("Inserisci un numero"));
 
 let cube = 0;
