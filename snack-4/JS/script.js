@@ -15,12 +15,12 @@ let numRequest = prompt(
 
 let sum = 0;
 
-// Check se è un numero
+// Check se numRequest è un numero
 
 if (isNaN(numRequest)) {
   alert("Non hai inserito un numero, ricarica la pagina");
 }
-// Check se è un numero a 4 cifre esatte
+// Check se numRequest è un numero a 4 cifre esatte
 else if (numRequest.length !== 4) {
   alert("Inserisci esattamente 4 cifre! Ricarica la pagina");
 }
