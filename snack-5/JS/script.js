@@ -6,15 +6,15 @@ let emptyArray = [];
 
 let sum = 0;
 
-i = 0;
-
 do {
   let numberRequest = parseInt(prompt("Inserisci un un numero"));
   emptyArray.push(numberRequest);
-  sum += emptyArray[i];
-  i++;
-  console.log(emptyArray);
+  sum += parseInt(numberRequest);
+
+  console.log(numberRequest);
+
   console.log(sum);
+  
   if (sum >= 50) {
     console.log("non dovevi superare 50");
   } else {
