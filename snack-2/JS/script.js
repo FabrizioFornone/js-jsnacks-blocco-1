@@ -8,11 +8,11 @@ const hookHtml = document.getElementById("hook");
 
 let numuser = parseInt(prompt("Inserisci un numero"));
 
-let cube = 0;
+let cube;
 
 for (let i = 0; i < numuser; i++) {
   cube = Math.pow(i, 3);
   console.log(cube);
   //stampo in HTML
-  hookHtml.innerHTML += cube;
+  hookHtml.innerHTML += `<br/>${cube}`;
 }
