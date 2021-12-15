@@ -18,4 +18,10 @@ do {
   sum += emptyArray[i];
   i++;
   console.log(emptyArray);
+  console.log(sum);
+  if (sum >= 50) {
+    console.log("non dovevi superare 50");
+  } else {
+    console.log("bene non hai superato 50");
+  }
 } while (sum < 50);
