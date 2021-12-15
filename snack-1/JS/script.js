@@ -1,4 +1,4 @@
-// Hook
+// Hook HTML
 
 const hookHtml = document.getElementById('hook');
 
