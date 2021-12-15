@@ -2,22 +2,37 @@
  Continua a chiedere i numeri all’utente e a inserirli nell’array
   fino a quando la somma degli elementi è minore di 50. */
 
+// Hook HTML
+
+const hookHtml = document.getElementById("hook");
+
+// Dichiarazione variabile contenente array vuoto
+
 let emptyArray = [];
+
+// Dichiarazione numberRequest e sum
+
+let numberRequest;
 
 let sum = 0;
 
+// Ciclo do-while
+
 do {
-  let numberRequest = parseInt(prompt("Inserisci un un numero"));
+  // numberRequest è un prompt
+  numberRequest = prompt("Inserisci un un numero");
+  // emptyArray viene riempita da numberRequest
   emptyArray.push(numberRequest);
+  /* sum è una variabile che somma sempre i valori inseriti
+   con numberRequest, convertendoli in numeri */
   sum += parseInt(numberRequest);
-
   console.log(numberRequest);
-
   console.log(sum);
-  
+
+  // if di check
   if (sum >= 50) {
-    console.log("non dovevi superare 50");
+    alert("Ahia, hai superato 50!");
   } else {
-    console.log("bene non hai superato 50");
+    console.log("l'utente non ha ancora superato 50");
   }
 } while (sum < 50);
