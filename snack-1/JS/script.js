@@ -6,17 +6,28 @@
 
 const hookHtml = document.getElementById("hook");
 
-// Ciclo for x generare 10 prompt
+// Dichiarazione variabili
 
-let numRequest = 0;
+let numRequest;
 
 let sum = 0;
 
+// Ciclo for
+
 for (let i = 0; i < 10; i++) {
-  numRequest = parseInt(prompt("Inserisci un numero"));
-  console.log(numRequest);
-  sum += numRequest;
-  console.log(sum);
+  // prompt x utente
+  numRequest = prompt("Inserisci un numero");
+  // Check se l'imput inserito è un numero o no
+  if (isNaN(numRequest)) {
+    alert("Inserisci un numero!");
+  } else {
+    // trasforma stringa in intero
+    numRequest = parseInt(numRequest);
+    /* conserva il valore inserito in una variabile sum
+     che non si sovrascrive alla fine del ciclo */
+    sum += numRequest;
+    console.log(sum);
+  }
 }
 
 // Stampo in HTML
