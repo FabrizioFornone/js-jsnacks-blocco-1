@@ -6,17 +6,14 @@ const hookHtml = document.getElementById("hook");
 
 // dichiarazione variabili
 
-let highNumber;
+let highNumber = 2;
 
-let x = 0
+let x = 2;
 
-// Ciclo do-while
+// Ciclo While
 
-do {
+while (Math.pow(2, x) < 1000) {
   highNumber = Math.pow(2, x);
-  x++;
   hookHtml.innerHTML += `<br/>${highNumber}`;
-} while (highNumber <= 1000)
-
-
-
+  x++;
+}

@@ -8,15 +8,13 @@ const hookHtml = document.getElementById("hook");
 
 // Dichiarazione variabili
 
-let numRequest;
-
 let sum = 0;
 
 // Ciclo for
 
 for (let i = 0; i < 10; i++) {
   // prompt x utente
-  numRequest = prompt("Inserisci un numero");
+  let numRequest = prompt("Inserisci un numero");
   // Check se l'imput inserito è un numero o no
   if (isNaN(numRequest)) {
     alert("Inserisci un numero!");
