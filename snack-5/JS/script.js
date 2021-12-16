@@ -10,7 +10,7 @@ const hookHtml = document.getElementById("hook");
 
 let emptyArray = [];
 
-// Dichiarazione numberRequest e sum
+// Dichiarazione sum
 
 let sum = 0;
 
