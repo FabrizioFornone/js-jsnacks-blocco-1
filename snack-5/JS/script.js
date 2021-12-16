@@ -12,15 +12,13 @@ let emptyArray = [];
 
 // Dichiarazione numberRequest e sum
 
-let numberRequest;
-
 let sum = 0;
 
 // Ciclo do-while
 
 do {
   // numberRequest è un prompt
-  numberRequest = prompt("Inserisci un un numero");
+  let numberRequest = prompt("Inserisci un un numero");
   // emptyArray viene riempita da numberRequest
   emptyArray.push(numberRequest);
   /* sum è una variabile che somma sempre i valori inseriti
